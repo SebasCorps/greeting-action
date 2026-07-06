@@ -1,4 +1,4 @@
-name: "Simple Greeting Action"
+name: "greetingMSPQ-action-test-v4"
 description: a CUSTIM GITHUB ACTION TO PRINT GEETING MESSAGE
 
 inputs:
