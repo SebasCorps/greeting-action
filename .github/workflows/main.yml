@@ -15,5 +15,5 @@ jobs:
         uses: ./
         with:
           username: sebasxdd
-      - name: Use Action outputs
+      - name: Using Action outputs
         run: echo "Action says - ${{ steps.greet.outputs.message }}"
