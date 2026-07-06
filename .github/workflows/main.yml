@@ -8,8 +8,6 @@ jobs:
   greet-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v5
       - name: Calling custom action yml
         id: greet
         uses: SebasCorps/greeting-action@v1.0
