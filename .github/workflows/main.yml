@@ -1,0 +1,19 @@
+name: Custum Action Demo
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  greet-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@4
+      - name: Calling custom action yml
+        id: greet
+        uses: ./
+        with:
+          username: sebasxdd
+      - name: Use Action outputs
+        run: echo "Action says: ${{ steps.greet.outputs.message }}"
