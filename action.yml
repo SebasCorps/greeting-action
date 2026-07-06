@@ -21,4 +21,4 @@ runs:
       shell: bash
       run: |
         echo "Hello ${{ inputs.username}}, welcoe to ${{inputs.season }} season."
-        echo "message-Hello ${{inputs.username}}" >> $GITHUB_OUTPUT
+        echo "message=Hello ${{inputs.username}}" >> $GITHUB_OUTPUT
