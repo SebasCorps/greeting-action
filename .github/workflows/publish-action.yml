@@ -12,7 +12,7 @@ jobs:
          actions: write
       steps:
         - name: checkout Repository
-          uses: actions/checkout@4
+          uses: actions/checkout@v4
           with:
             fecth-depth: 0 #required to read tag history
         - name: Read Major Verion
